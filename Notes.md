@@ -4,7 +4,7 @@
 
 ### Docker Tags
 ```
-    docker run redis
+docker run redis
 ```
 VS
 ```
