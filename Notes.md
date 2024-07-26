@@ -35,3 +35,7 @@ all our data would be gone! If we want to have data *persist*, we need to map th
 ```
 docker run -v /opt/datadir:/var/lib/mysql mysql
 ```
+To view logs, use the `logs` command:
+```
+docker logs <containerID or name>
+```
