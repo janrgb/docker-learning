@@ -25,3 +25,13 @@ where the user would connect like
 ```
 http://[host IP]:[mapped local port]
 ```
+### RUN - Volume Mapping
+Docker has its own dedicated file system, so any changes to any files would happen within the container. Thus, if we delete the container:
+```
+docker stop mysql
+docker rm mysql
+```
+all our data would be gone! If we want to have data *persist*, we need to map the files to a different directory using the `-v` option:
+```
+docker run -v /opt/datadir:/var/lib/mysql mysql
+```
