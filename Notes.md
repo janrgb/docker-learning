@@ -3,6 +3,6 @@
 ## DOCKER RUN
 
 ### Docker Tags
-`docker run redis`
+```docker run redis```
 VS
-`docker run redis:4.0`
+```docker run redis:4.0```
